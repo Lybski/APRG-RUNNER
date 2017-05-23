@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Fung Kury</title>
+    <meta charset="utf-8">
+
+    <!--bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/map.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+ <!--navbar-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#Buchstaben">Buchstaben</a></li>
+                        <li><a href="#game">Game</a></li>
+
+                        <li><a href="#Highscore">Highscore</a></li>
+                        <!--<li><a href="#portfolio">Sinnloser anderer Kram</a></li>-->
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="header col-md-12 hidden-xs" id="header">
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <h3 >Jetzt auch in 2D!</h3>
+     </div>
+
+
+         <div class="container-fluid">
+
+
+            <!--MP3 Player-->
+        <div class="player" style="text-align:center">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <audio id="audio" preload="auto"></audio>
+                    <div class="btn-group">
+                        <button onclick="Play('audio/title.mp3','audio');" class="btn btn-custom"><span title="Play" id="play" class="glyphicon glyphicon-play aligned"></span></button>
+                        <button onclick="Stop('audio/title.mp3','audio');" class="btn btn-custom"><span title="Stop" id="stop" class="glyphicon glyphicon-stop aligned"></span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Container (Buchstaben Section) -->
+        <div id= "Buchstaben" class="container-fluid bg-black">
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <img src="images/char.png" alt="Charakter" style="width:100% ;height:100%;">
+
+                    <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
+                </div>
+                <div class="col-sm-8">
+                    <br><br><br>
+                    <h2>Wir können den scheiß, denn wir können den scheiß</h2><br>
+                    <h4><strong>Warum?:</strong> Warum könnt ihr den scheiß? </h4><br>
+                    <p><strong>Weil:</strong> Wir können den scheiß, denn wir können den scheiß.
+                        Wir können den scheiß, denn wir können den scheiß. Wir können den scheiß, denn wir können den scheiß.
+                        Wir können den scheiß, denn wir können den scheiß. Wir können den scheiß, denn wir können den scheiß.
+                        Wir können den scheiß, denn wir können den scheiß. Wir können den scheiß, denn wir können den scheiß.
+                        Wir können den scheiß, denn wir können den scheiß. Wir können den scheiß, denn wir können den scheiß.
+                        Wir können den scheiß, denn wir können den scheiß. </p>
+                </div>
+            </div>
+        </div>
+             <!-- Container (Game Section) -->
+             <div id="game" class="container-fluid">
+                 <div class="text-center">
+                     <h2>Game</h2>
+                     <h4>Willst du wirklich spielen?</h4>
+                 </div>
+                 <div class="row slideanim">
+                     <div class="col-sm-4 col-xs-12">
+                         <div class="panel panel-default text-center">
+                             <div class="panel-heading">
+                                 <h1>Ne, kein bock</h1>
+                             </div>
+                             <div class="panel-body">
+                                 <p>...Ja dann lass es halt...</p>
+
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-sm-4 col-xs-12">
+                         <div class="panel panel-default text-center">
+                             <div class="panel-heading">
+                                 <h1>naja geht so...</h1>
+                             </div>
+                             <div class="panel-body">
+                                 <p><strong>Ja dann halt nicht!</strong> </p>
+
+                             </div>
+
+                         </div>
+                     </div>
+                     <div class="col-sm-4 col-xs-12">
+                         <div class="panel panel-default text-center">
+                             <div class="panel-heading">
+                                 <h1>Ja ich hab Bock!</h1>
+                             </div>
+                             <div class="panel-body">
+                                 <p><strong>dann klick auf den verdammten Button!</strong> </p>
+
+                             </div>
+                             <div class="panel-footer">
+                                 <h3>Fung Kury</h3>
+                                 <button class="btn btn-lg" onClick="parent.location='Game.html'"> Spielen </button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+
+
+             <div class="headerGame col-md-12 hidden-xs" id="headerGame">
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                 <br><br><br><br><br><br><br><br><br>
+             </div>
+
+
+             <!-- Container (Highscore Section) -->
+        <div id="Highscore" class="container-fluid text-center">
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <h2>HIGHSCORE</h2>
+            <h4>Hier willste hin</h4>
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-12">
+
+
+
+
+
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <h4>Spieler 1</h4>
+                        <p>Der war gut.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <h4>Spieler 2</h4>
+                        <p>Der war gut, aber nicht so gut wie Spieler 1</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <h4>Spieler 3</h4>
+                        <p>Naja ab hier wirds schon schwächer...</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <h4>Spieler 4</h4>
+                        <p>Joa er hat zumindest den Button gefunden.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <h4>Spieler 5</h4>
+                        <p>Der hier auch</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <h4>Spieler 6</h4>
+                        <p>War mehr oder weniger anwesend...</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+
+        <!-- Container (Contact Section) -->
+        <div id="contact" class="container-fluid bg-grey">
+            <h2 class="text-center">Kontakt</h2>
+            <div class="row">
+                <div class="col-sm-5">
+                    <p><strong>Schreib ruhig was rein. Es antwortet sowieso keiner.</strong></p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Hamburg, DE</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> trash@mymailbox.com</p>
+                </div>
+                <div class="col-sm-7 slideanim">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Dein verdammter Text" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Ab ins Nirvana damit!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Add Google Maps -->
+        <div id="googleMap" style="height:300px;width:100%;"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhQhTWNRwo6O1DF42-WId6afXT7LR9JMk&callback=myMap"></script>
+            <!-- neuer API Key: https://www.w3schools.com/graphics/google_maps_basic.asp-->
+
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
+    </body>
+</html>
