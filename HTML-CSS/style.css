@@ -1,12 +1,12 @@
 .header {
-    background-image: url("images/background1.png");
+    background-image: url("../Grafik/background1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 
 .headerGame{
-    background-image: url("images/background2.png");
+    background-image: url("../Grafik/background2.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -9;
