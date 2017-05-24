@@ -9,7 +9,7 @@ var bgImage = new Image();
 bgImage.onload = function(){
     bgReady = true;
 }
-bgImage.src = "images/background.png";
+bgImage.src = "../Grafik/background.png";
 
 var heroReady = false;
 var heroImage = new Image();
@@ -23,8 +23,8 @@ monsterImage.onload = function(){
 }
 
 
-heroImage.src = "images/hero.png";
-monsterImage.src = "images/monster.png";
+heroImage.src = "../Grafik/hero.png";
+monsterImage.src = "../Grafik/monster.png";
 
 var render = function(){
     if(bgReady){
