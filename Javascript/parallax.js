@@ -79,6 +79,7 @@ $(document).ready(function(){
     //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
     $('#header').parallax("50%", -0.5);
     $('#headerGame').parallax("50%", -0.7);
+    $('#headerImg').parallax("50%", -0.7);
     $('#bg2').parallax("50%", 0.5);
 })
 
