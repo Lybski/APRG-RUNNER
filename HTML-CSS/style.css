@@ -36,7 +36,7 @@ html{
 }
 
 .myGame{
-    background-image: url("images/background2.png");
+    background-image: url("../Grafik/background2.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -9;
