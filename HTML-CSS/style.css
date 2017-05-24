@@ -1,33 +1,46 @@
 .header {
-    background-image: url("../Grafik/background1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-}
-
-.headerGame{
-    background-image: url("../Grafik/background2.png");
+    background-image: url("images/background1.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -9;
-    background-position: top;
-
+    background-position: center;
+    height: 500px;
 }
 
+
+
+.headerGame{
+    background-image: url("images/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+    background-position: center;
+}
+.headerImg{
+    background-image: url("images/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+    height: 500px;
+}
 
 
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
-    height: 95%;
+    height: 100%;
 }
 html{
     height: 100%;
 }
 
 .myGame{
-    background-color: #1651f4;
+    background-image: url("images/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+    background-position: top;
 }
 
 h2 {
