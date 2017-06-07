@@ -83,9 +83,9 @@ EOF
 sudo sed -i 's/bind-add/#bind-add/g' /etc/mysql/my.cnf
 
 mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION; FLUSH PRIVILEGES;"
-mysql -uroot -proot -e "DROP DATABASE IF EXISTS kis";
-mysql -uroot -proot -e "CREATE DATABASE kis";
-mysql -uroot -proot kis < /vagrant/kis.sql;
+mysql -uroot -proot -e "DROP DATABASE IF EXISTS runner";
+mysql -uroot -proot -e "CREATE DATABASE runner";
+mysql -uroot -proot kis < /vagrant/runner.sql;
 
 sudo service mysql restart
 
